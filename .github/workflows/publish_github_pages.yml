@@ -1,11 +1,10 @@
-# Publish new set of GitHub Pages when new GSC pictures are committed to main
+# Publish new set of GitHub Pages when new GSC or XBM pictures are committed to main
 
 on:
   workflow_dispatch:
   push:
     branches:
-      #- main
-      - test_workflow
+      - main
     paths:
       - ".github/workflows/publish_github_pages.yml"
       - "**/*.gsc"
